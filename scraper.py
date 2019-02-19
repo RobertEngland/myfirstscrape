@@ -11,7 +11,7 @@ print(html)
 # created a variable called html which grabs the web address and then prints it
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-print(root.cssselect("div[align='left']"))
+print(root.cssselect("a"))
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
