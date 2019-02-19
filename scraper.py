@@ -12,6 +12,7 @@ print(html)
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 print(root.cssselect("a"))
+print(root.cssselect("body style"))
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
