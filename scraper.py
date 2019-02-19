@@ -14,8 +14,12 @@ root = lxml.html.fromstring(html)
 print(root.cssselect("a"))
 print(root.cssselect("body style"))
 variablelistofmatches = root.cssselect("a")
+record = {}
 for match in variablelistofmatches:
   print(match)
+  record{"link"}=lxml.html.tostring(match)
+  print(record)
+  scaperwiki.sql.save(unique_keys=["link"], record)
 print(lxml.html.tostring(match))
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
