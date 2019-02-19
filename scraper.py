@@ -16,7 +16,7 @@ print(root.cssselect("body style"))
 variablelistofmatches = root.cssselect("a")
 for match in variablelistofmatches:
   print(match)
-print(lxml.html.twostring(match))
+print(lxml.html.tostring(match))
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
