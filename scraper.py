@@ -17,7 +17,7 @@ variablelistofmatches = root.cssselect("a")
 record = {}
 for match in variablelistofmatches:
   print(match)
-  record{"link"}=lxml.html.tostring(match)
+  record["link"]=lxml.html.tostring(match)
   print(record)
   print(lxml.html.tostring(match))
   scaperwiki.sql.save(unique_keys=["link"], data=record)
