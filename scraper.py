@@ -20,7 +20,7 @@ for match in variablelistofmatches:
   record["link"]=lxml.html.tostring(match)
   print(record)
   print(lxml.html.tostring(match))
-  scaperwiki.sql.save(unique_keys=["link"], data=record)
+  scraperwiki.sql.save(unique_keys=["link"], data=record)
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
